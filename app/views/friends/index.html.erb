@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Friends</h1>
 
 <table class="table table-striped table-hober table-bordered">
@@ -23,7 +21,7 @@
       <td><%= friend.twitter %></td>
 	  <td><%= link_to "Show", friend %></td>
 	  <td><%= link_to "Edit", edit_friend_path(friend) %></td>
-	  <td><%= link_to 'Delete', friend, method: :destroy%></td>
+	  <td><%= button_to 'Delete', friend, method: :delete%></td>
     </tr>
 	<% end %>
   </tbody>
